@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UbahActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawablePadding="2dp"
+            android:background="@drawable/header"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:text="Order"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Nama"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bginp"
+                    android:id="@+id/et_nama"
+                    android:drawablePadding="3dp"
+                    android:inputType="text"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Alamat"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/et_alamat"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:background="@drawable/bginp"
+                    android:inputType="text"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Telepon"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bginp"
+                    android:drawablePadding="3dp"
+                    android:inputType="number"
+                    android:id="@+id/et_telepon"
+               />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merk Handphone"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_merk"
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_sams"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Samsung" />
+
+                    <RadioButton
+                        android:id="@+id/rb_xiaom"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Xiaomi" />
+
+                    <RadioButton
+                        android:id="@+id/rb_apple"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Apple" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_vivo"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Vivo" />
+                    <RadioButton
+                        android:id="@+id/rb_oppo"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Oppo" />
+                    <RadioButton
+                        android:id="@+id/rb_realme"
+                        android:gravity="center"
+                        android:background="@drawable/bginp"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Realme" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seri Handphone"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <Spinner
+                    android:background="@drawable/bginp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/sp_seri"
+                    android:layout_width="170dp"
+                    android:layout_height="35dp"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnubah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:text="Edit Order"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

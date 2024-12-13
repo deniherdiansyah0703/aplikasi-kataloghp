@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KatalogHP"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.UbahActivity"
+            android:exported="false"
+            android:parentActivityName=".Activity.UasActivity" />
+        <activity
+            android:name=".Activity.UasActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".Activity.TambahDataActivity"
+            android:exported="false"
+            android:parentActivityName=".Activity.UasActivity" />
+        <activity
+            android:name=".ViewEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edit"
+            android:exported="false" />
+        <activity
+            android:name=".InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".XiaomiDetail"
+            android:exported="false" />
+        <activity
+            android:name=".VivoDetail"
+            android:exported="false" />
+        <activity
+            android:name=".SamsungDetail"
+            android:exported="false" />
+        <activity
+            android:name=".RealmeDetail"
+            android:exported="false" />
+        <activity
+            android:name=".OppoDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".AppleDetail"
+            android:exported="false" />
+        <activity
+            android:name=".RealmeActivity"
+            android:exported="false"
+            android:label="Brand Realme"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".VivoActivity"
+            android:exported="false"
+            android:label="Brand Vivo"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".OppoActivity"
+            android:exported="false"
+            android:label="Brand Oppo"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".XiaomiActivity"
+            android:exported="false"
+            android:label="Brand Xiaomi"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".AppleActivity"
+            android:exported="false"
+            android:label="Brand Apple"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".SamsungActivity"
+            android:exported="false"
+            android:label="Brand Samsung"
+            android:parentActivityName=".DashActivity" />
+        <activity
+            android:name=".RegActivity"
+            android:exported="false"
+            android:theme="@style/Theme.KatalogHP.NoActionBar" />
+        <activity
+            android:name=".DashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KatalogHP.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
